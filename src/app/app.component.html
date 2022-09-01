@@ -1,0 +1,27 @@
+<body>
+  <header>
+      <h1>{{title}}</h1>
+  </header>
+  <main>
+      <div class="form_class">
+          <div class="form_div">
+              <label>Edad Uno</label>
+              <input class="field_class" type="text" autofocus [(ngModel)]="numeroUno">
+              <label>Edad Dos</label>
+              <input class="field_class" type="text" [(ngModel)]="numeroDos" >
+              
+              <label>Promedio:</label>
+              <input class="field_class" type="text" readonly [(ngModel)]="promedio">
+              <label>Suma:</label>
+              <input class="field_class" type="text" readonly [(ngModel)]="suma">
+          </div>
+          <button class="submit_class" (click)="calcular()">Calcular</button>
+          <button class="submit_class" (click)="limpiar()">Limpiar cuadros de textos</button>
+      </div>
+  </main>
+  <footer>
+      <p>Super Footer</p>
+  </footer>
+</body>
+
+<router-outlet></router-outlet>
